@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>i love you</title>
+    </head>
+    <body>
+        <script>
+            const phoneNumber = '+79116163655';
+            const message = 'Зайди в вк';
+            const url = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+            (localStorage.getItem('check') ?? false ) ? location.href = url : localStorage.setItem('check', true)
+            // 
+        </script>
+    </body>
+</html>
